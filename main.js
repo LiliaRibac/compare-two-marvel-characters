@@ -27,10 +27,10 @@ $(document).ready(function () {
     let popularity =results.popularity.toFixed(2);
     let age = getAge(results.birthday);
     let poster = document.createElement('div');
-    poster.innerHTML = `<div style=" margin-top:150px; max-width:600px; height: 500px; width:100%; background-repeat:no-repeat; background-size:contain; background-image: url('https://image.tmdb.org/t/p/w500/${(results.profile_path)}')"></div>  
-    <div style="text-align:left; padding: 30px; margin:0px auto; background-color:white; max-width:800px;"><div style="">
-      <h1 class="primary-header">${results.name}</h1><a class="primary-btn" href="https://www.imdb.com/name/${results.imdb_id}/">IMDB</a>
-        <div style=" width:100%; font-weight:bold; text-align:left; padding-top:30px;">
+    poster.innerHTML = `<div style=" margin:150px 150px; max-width:600px; height: 500px; width:100%; background-repeat:no-repeat; background-size:contain; background-image: url('https://image.tmdb.org/t/p/w500/${(results.profile_path)}')"></div>  
+    <div style="text-align:left; padding:0 130px; margin:0px auto; background-color:white; max-width:800px;"><div style="">
+      <h1 class="primary-header; padding-left:160px;">${results.name}</h1><a class="primary-btn" href="https://www.imdb.com/name/${results.imdb_id}/">IMDB</a>
+        <div style=" width:100%; font-weight:bold; text-align:left;  padding:60px;">
     
       <p>Birthday: ${results.birthday}</p> 
       <p>Age: ${age}</p>  
@@ -76,7 +76,7 @@ $(document).ready(function () {
       pointerHeadLengthPercent: 0.9,
   
       minValue: 0,
-      maxValue: 100,
+      maxValue: 25,
   
       minAngle: -90,
       maxAngle: 90,

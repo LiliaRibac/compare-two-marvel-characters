@@ -12,7 +12,7 @@
     border:none;
     outline:none;
     text-decoration:none;
-    margin-top:30px;
+    margin-left: 55px;
 }
 
 .primary-btn:hover{
@@ -25,4 +25,12 @@
 
 .gaugeBackground {
     fill: #ddd;
+    margin-left: 60px;
+    text-align: center;
   }
+
+h1{
+  
+   text-align: center;
+   padding-bottom: 54px;
+}
